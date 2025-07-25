@@ -13,9 +13,13 @@ const portfolioElements = portfolioProjects.map(project => {
 
 const Projects = () => {
   return (
-    <div className="bg-black w-full min-h-screen">
+    <div className="relative w-full min-h-screen overflow-hidden">
+      {/* Gradient background */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#1e293b] via-[#23272f] to-[#18181b]" />
       <h1 className="text-white font-bold text-4xl mx-20 py-20 ">My Projects</h1>
-      {portfolioElements}
+      <div >
+        {portfolioElements}
+      </div>
     </div>
   );
 };

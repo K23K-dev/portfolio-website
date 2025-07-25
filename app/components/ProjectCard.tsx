@@ -1,11 +1,11 @@
+
+
 const ProjectCard = (props) => {
   return (
-    <>
-      <div className="">
-        {props.image.src}
-        {props.name}
-      </div>
-    </>
+    <div className="flex">
+      <img src={props.image.src} className="w-32 h-32"/>
+      <p className="text-white text-2xl font-semibold">{props.name}</p>
+    </div>
   )
 }
 

@@ -54,7 +54,8 @@ export const portfolioProjects = [
     id: 1,
     name: "Budget Tracker",
     description: "Tracks expenses",
-    image: {src: "/images/projects/portfolio2.webp"}
+    image: {src: "/images/projects/portfolio2.webp"},
+    skills: ["React, tailwind, PostgreSQL, NodeJS"]
   },
   {
     id: 2,

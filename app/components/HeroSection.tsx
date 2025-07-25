@@ -3,8 +3,6 @@
 import { Inter } from "next/font/google"
 import { TypeAnimation } from "react-type-animation";
 
-const headline = "I am an aspiring SWE studying at Georgia Tech"
-
 const HeroSection = () => {
 
   return (
@@ -16,7 +14,7 @@ const HeroSection = () => {
         Hi&#33; I&apos;m Kevin Kou
       </h2>
       <TypeAnimation
-        sequence={[headline]}
+        sequence={["I am an aspiring SWE studying at Georgia Tech"]}
         className="text-white font-bold text-3xl font-mono"
         cursor={false}
         speed={60}
