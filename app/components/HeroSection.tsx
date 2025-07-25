@@ -1,23 +1,11 @@
 'use client'
 
 import { Inter } from "next/font/google"
-import { useEffect, useState } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const headline = "I am an aspiring SWE studying at Georgia Tech"
 
 const HeroSection = () => {
-  const [displayed, setDisplayed] = useState("");
-
-  useEffect(() => {
-    let i = 0;
-    const interval = setInterval(() => {
-      setDisplayed(headline.slice(0, i + 1));
-      i++;
-      if (i === headline.length) clearInterval(interval);
-    }, 35); // Adjust speed here (ms per letter)
-    return () => clearInterval(interval);
-  }, []);
-
 
   return (
     <div className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
@@ -27,9 +15,12 @@ const HeroSection = () => {
       <h2 className="text-white text-xl font-mono">
         Hi&#33; I&apos;m Kevin Kou
       </h2>
-      <h1 className="text-white font-bold text-3xl font-mono">
-        {displayed}
-      </h1>
+      <TypeAnimation
+        sequence={[headline]}
+        className="text-white font-bold text-3xl font-mono"
+        cursor={false}
+        speed={60}
+      />
       <div className="flex flex-row gap-4 mt-8">  
         <button className="px-6 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg shadow-md font-semibold hover:scale-105 hover:from-blue-600 hover:to-indigo-700 transition-all duration-200">
           My Projects
