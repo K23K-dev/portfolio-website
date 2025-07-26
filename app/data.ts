@@ -54,13 +54,14 @@ export const portfolioProjects = [
     id: 1,
     name: "Budget Tracker",
     description: "Tracks expenses",
-    image: {src: "/images/projects/portfolio2.webp"},
-    skills: ["React, tailwind, PostgreSQL, NodeJS"]
+    image: {src: "/images/projects/portfolio2.webp", alt: ""},
+    skills: ["React", "tailwind", "PostgreSQL", "NodeJS"]
   },
   {
     id: 2,
     name: "Shopify",
     description: "Shopping website clone",
-    image: {src: "/images/projects/portfolio4.webp"}
+    image: {src: "/images/projects/portfolio4.webp", alt: ""},
+    skills: ["React", "tailwind", "MongoDB", "NextJS"]
   }
 ];

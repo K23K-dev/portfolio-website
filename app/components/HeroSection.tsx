@@ -1,12 +1,11 @@
 'use client'
 
-import { Inter } from "next/font/google"
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
+    <div id="hero" className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#18181b] via-[#23272f] to-[#1e293b]" />
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-indigo-500 opacity-30 rounded-full filter blur-3xl pointer-events-none -z-10"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-400 opacity-20 rounded-full filter blur-2xl pointer-events-none -z-10"></div>
